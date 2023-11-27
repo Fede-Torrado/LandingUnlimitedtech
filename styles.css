@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./Fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('./Fonts/Nexa\ Bold.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #161415;
+    height: 190px; 
+}
+header img{
+    width: 300px;
+    float: left; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 80pt;
+    line-height: 80pt;
+}
+
+.first-section {
+    background: url('./img/imagen.jpg') no-repeat center top;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.left-div { 
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    width: 40%;
+    padding: 20px;
+}
+
+
+.right-div {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+}
+
+.first-section .left-div p {
+    width: 100%;
+    font-size: 19pt;
+    line-height: 25pt;
+    margin-bottom: 18px;
+    text-shadow: 0.04em 0.04em #000000;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 15px;
+}
+
+.second-section {
+    display:flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.feature-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    gap: 30px;
+    
+}
+
+.feature {
+    min-width: 300px;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.feature h2 {
+    font-family: 'Nexa Bold';
+}
+
+footer{
+    background-color: #161415;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;    
+}
+
+footer img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*---------------Formulario---------------------------*/
+form {
+    
+    background-color:rgba(0, 0, 0, 0.548);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    font-family: 'Lato';
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input,
+textarea {
+    font-family: 'Lato';
+    background-color:rgba(0, 0, 0, 0.705);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    Color: white;
+}
+
+button {
+    font-family: 'Nexa Bold';
+    background-color: #7439D3;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #49218a;
+}
+
+footer a{
+    list-style-type: none;
+    text-decoration: none;
+}
+/*---------------Detalles---------------------------*/
+
+header img{
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+/*MEDIAS QUERIES*/
+/* Media Query para formato celular (iPhone 13) */
+@media only screen and (max-width: 390px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    header img{
+        margin-left: 0px;
+        width: 250px; 
+        float: left;
+        margin-top: 0px;
+    }
+
+    .first-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .left-div, .right-div {
+        width: 100%;
+    }
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 45pt;
+        line-height: 50pt;
+    }
+
+    .first-section .left-div p {
+    font-size: 17pt;
+    line-height: 25pt;
+    margin-bottom: 18px;
+    text-shadow: 0.04em 0.04em #000000;
+    }
+    .right-div {
+        margin-top: 20px;
+    }
+
+    .second-section {
+        padding: 30px 0;
+    }
+
+    footer img {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    header img {
+        margin-left: 110px;
+        margin-top: 70px;
+    }
+    
+    h1 {
+        margin-bottom: 15px;
+        font-size: 50pt;
+        line-height: 50pt;
+    }
+
+    .first-section .left-div p {
+        font-size: 18pt;
+        line-height: 25pt;
+        }
+
+        .feature-container {
+            width: 90%;
+            gap:25px;
+        }
+
+
+}
+/* Media Query para formato de tablet */
+/*@media only screen and (min-width: 390px) and (max-width: 768px) {
+    header {
+        height: 250px;
+    }
+
+    header img {
+        margin-top: 87.5px;
+    }
+
+    .first-section {
+        height: auto;
+    }
+
+    .left-div, .right-div {
+        width: 100%;
+    }
+
+    .right-div {
+        margin-top: 20px;
+    }
+
+    .second-section {
+        padding: 40px 0;
+    }
+
+    footer img {
+        margin-top: 20px;
+    }
+}

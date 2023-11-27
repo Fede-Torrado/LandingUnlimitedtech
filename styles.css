@@ -171,7 +171,9 @@ header img{
 
 /*MEDIAS QUERIES*/
 /* Media Query para formato celular (iPhone 13) */
-@media only screen and (max-width: 390px){
+
+
+@media only screen and (max-width: 1024px){
     header {
         display: flex;
         align-items: center;
@@ -183,10 +185,9 @@ header img{
     }
 
     header img{
-        margin-left: 0px;
+        margin: 0;
+        padding: 0;
         width: 250px; 
-        float: left;
-        margin-top: 0px;
     }
 
     .first-section {
@@ -224,10 +225,9 @@ header img{
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1024px){
     header img {
-        margin-left: 110px;
-        margin-top: 70px;
+      
     }
     
     h1 {
